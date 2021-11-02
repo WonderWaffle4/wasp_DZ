@@ -23,43 +23,42 @@ namespace Homework
             // Здесь необходимо написать код.
             bool flag = true;
             int buffer;
-            int sum1 = 0;
-            int sum2 = 0;
+            int sum1 = 0, sum2 = 0;
             while (flag)
             {
                 flag = false;
                 for(int i = 0; i < list.Count - 1; i++)
                 {
                     buffer = list[i];
-                    while(list[i].ToString().Length > 1)
+                    while(buffer.ToString().Length > 1)
                     {
-                        sum1 += buffer;
+                        sum1 += buffer % 10;
                         buffer /= 10;
                     }
                     sum1 += buffer;
                     buffer = list[i + 1];
-                    while (list[i + 1].ToString().Length > 1)
+                    while (buffer.ToString().Length > 1)
                     {
-                        sum2 += buffer;
+                        sum2 += buffer % 10;
                         buffer /= 10;
                     }
-                    buffer = list[i];
+                    sum2 += buffer;
                     if(sum1 > sum2)
                     {
+                        buffer = list[i];
                         list[i] = list[i + 1];
                         list[i + 1] = buffer;
                         flag = true;
                     }
-                    if (sum1 == sum2)
+                    if (sum1 == sum2 && list[i] > list[i + 1])
                     {
-                        if (list[i] > list[i + 1])
-                        {
-                            buffer = list[i];
-                            list[i] = list[i + 1];
-                            list[i + 1] = buffer;
-                            flag = true;
-                        }
+                        buffer = list[i];
+                        list[i] = list[i + 1];
+                        list[i + 1] = buffer;
+                        flag = true;
                     }
+                    sum1 = 0;
+                    sum2 = 0;
                 }
             }
             return list;
