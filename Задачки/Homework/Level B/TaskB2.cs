@@ -21,8 +21,48 @@ namespace Homework
         public static List<int> OrderWeight(List<int> list)
         {
             // Здесь необходимо написать код.
-
-            return null;
+            bool flag = true;
+            int buffer;
+            int sum1 = 0;
+            int sum2 = 0;
+            while (flag)
+            {
+                flag = false;
+                for(int i = 0; i < list.Count - 1; i++)
+                {
+                    buffer = list[i];
+                    while(list[i].ToString().Length > 1)
+                    {
+                        sum1 += buffer;
+                        buffer /= 10;
+                    }
+                    sum1 += buffer;
+                    buffer = list[i + 1];
+                    while (list[i + 1].ToString().Length > 1)
+                    {
+                        sum2 += buffer;
+                        buffer /= 10;
+                    }
+                    buffer = list[i];
+                    if(sum1 > sum2)
+                    {
+                        list[i] = list[i + 1];
+                        list[i + 1] = buffer;
+                        flag = true;
+                    }
+                    if (sum1 == sum2)
+                    {
+                        if (list[i] > list[i + 1])
+                        {
+                            buffer = list[i];
+                            list[i] = list[i + 1];
+                            list[i + 1] = buffer;
+                            flag = true;
+                        }
+                    }
+                }
+            }
+            return list;
         }
     }
 }
