@@ -21,8 +21,19 @@ namespace Homework
         public static bool VeryEven(int number)
         {
             // Здесь необходимо написать код.
-
-            return false;
+            if(number.ToString().Length == 1)
+            {
+                if (number % 2 == 0) return true;
+                return false;
+            }
+            int sum = 0;
+            while(number.ToString().Length > 1)
+            {
+                sum += number % 10;
+                number /= 10;
+            }
+            sum += number;
+            return VeryEven(sum);
         }
     }
 }

@@ -21,8 +21,18 @@ namespace Homework
         public static List<int> ListOfSums(List<int> list)
         {
             // Здесь необходимо написать код.
-
-            return null;
+            List<int> sums = new List<int>();
+            int sum = 0;
+            for(int i = 1; i < list.Count; i++)
+            {
+                for(int j = 0; j < i; j++)
+                {
+                    sum += list[j];
+                }
+                if (sum == list[i]) sums.Add(sum);
+                sum = 0;
+            }
+            return sums;
         }
     }
 }
