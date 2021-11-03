@@ -25,6 +25,9 @@ namespace Homework
         public static int Movie(int card, int ticket, double perc)
         {
             // Здесь необходимо написать код.
+            int pow = 1;
+            int a = 0;
+            int b = 0;
 
             return 0;
         }

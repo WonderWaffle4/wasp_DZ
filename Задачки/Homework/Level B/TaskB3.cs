@@ -22,8 +22,14 @@ namespace Homework
         public static string Decrypt(string key)
         {
             // Здесь необходимо написать код.
-
-            return "";
+            int[] alphabet = new int[26];
+            foreach (int i in key)
+            {
+                if (i >= 97 && i <= 122) alphabet[i - 97] += 1;
+            }
+            string answer = "";
+            foreach(int i in alphabet) answer += i;
+            return answer;
         }
     }
 }

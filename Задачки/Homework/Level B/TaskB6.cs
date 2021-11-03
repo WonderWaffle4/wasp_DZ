@@ -18,9 +18,28 @@ namespace Homework
     {
         public static string Reverser(string s)
         {
-            // Здесь необходимо написать код.
+            string answer = "";
+            int buffer;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == ' ') answer += " ";
+                else
+                {
+                    buffer = i;
+                    while (s[buffer] != ' ' && buffer < s.Length - 1)
+                    {
+                        buffer++;
+                    }
+                    if (s[buffer] == ' ') buffer--;
+                    for (int j = buffer; j >= i; j--)
+                    {
+                        answer += s[j];
+                    }
+                    i = buffer;
+                }
 
-            return "";
+            }
+            return answer;
         }
     }
 }

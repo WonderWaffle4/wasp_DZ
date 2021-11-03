@@ -50,7 +50,7 @@ namespace Homework
                         list[i + 1] = buffer;
                         flag = true;
                     }
-                    if (sum1 == sum2 && list[i] > list[i + 1])
+                    if (sum1 == sum2 && String.Compare(list[i].ToString(), list[i + 1].ToString()) > 0)
                     {
                         buffer = list[i];
                         list[i] = list[i + 1];
