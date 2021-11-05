@@ -25,11 +25,16 @@ namespace Homework
         public static int Movie(int card, int ticket, double perc)
         {
             // Здесь необходимо написать код.
-            int pow = 1;
-            int a = 0;
-            int b = 0;
-
-            return 0;
+            double pow = 1;
+            double a = 1;
+            double b = card;
+            while(b > a)
+            {
+                a = ticket * pow;
+                b += ticket * Math.Pow(perc, pow);
+                pow++;
+            }
+            return Convert.ToInt32(pow - 1);
         }
     }
 }
