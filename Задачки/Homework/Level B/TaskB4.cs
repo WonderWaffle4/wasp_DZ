@@ -19,9 +19,24 @@ namespace Homework
     {
         public static bool CheckBrackets(string s)
         {
-            // Здесь необходимо написать код.
+            // Здесь необходимо написать код. () 40 41 {} 123 125 [] 91 93 <> 60 62
+            Stack<int> brackets = new Stack<int>();
+            foreach (int i in s)
+            {
+                if (brackets.Count == 0 && (i == 41 || i == 125 || i == 93 || i == 62)) return false;
+                if (brackets.Count != 0)
+                {
+                    if (i != brackets.Peek() && (i == 41 || i == 125 || i == 93 || i == 62)) return false;
+                    if (i == brackets.Peek()) brackets.Pop();
+                }
+                if (i == 40) brackets.Push(41);
+                if (i == 123) brackets.Push(125);
+                if (i == 91) brackets.Push(93);
+                if (i == 60) brackets.Push(62);
 
-            return false;
+
+            }
+            return true;
         }
     }
 }
