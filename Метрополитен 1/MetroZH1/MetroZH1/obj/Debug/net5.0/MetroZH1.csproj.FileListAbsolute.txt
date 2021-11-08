@@ -1,0 +1,16 @@
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\bin\Debug\net5.0\MetroZH1.exe
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\bin\Debug\net5.0\MetroZH1.deps.json
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\bin\Debug\net5.0\MetroZH1.runtimeconfig.json
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\bin\Debug\net5.0\MetroZH1.runtimeconfig.dev.json
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\bin\Debug\net5.0\MetroZH1.dll
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\bin\Debug\net5.0\ref\MetroZH1.dll
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\bin\Debug\net5.0\MetroZH1.pdb
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\obj\Debug\net5.0\MetroZH1.csproj.AssemblyReference.cache
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\obj\Debug\net5.0\MetroZH1.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\obj\Debug\net5.0\MetroZH1.AssemblyInfoInputs.cache
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\obj\Debug\net5.0\MetroZH1.AssemblyInfo.cs
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\obj\Debug\net5.0\MetroZH1.csproj.CoreCompileInputs.cache
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\obj\Debug\net5.0\MetroZH1.dll
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\obj\Debug\net5.0\ref\MetroZH1.dll
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\obj\Debug\net5.0\MetroZH1.pdb
+D:\GitHub\wasp_DZ\Метрополитен 1\MetroZH1\MetroZH1\obj\Debug\net5.0\MetroZH1.genruntimeconfig.cache
