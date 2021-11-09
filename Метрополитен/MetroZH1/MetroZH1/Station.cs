@@ -18,17 +18,23 @@ namespace MetroZH1
         private List<Station> transfers;
 
 
-        public Station(string name, string color)// создаём конструктор, принимающий имя станции и её цвет
+        public Station(string name, string color, params bool[] options)// создаём конструктор, принимающий имя станции и её цвет
         {
             this.name = name; // присваиваем значению переменной name объекта значение переменной name метода
             this.color = color;// присваиваем значению переменной color объекта значение переменной color метода
+            isWheelChairAccessible = options[0];
+            hasParkAndRide = options[1];
+            hasNearbyCableCar = options[2];
         }
-        public Station(string name, string color, List<Station> transfers)// создаём конструктор, принимающий имя станции, её цвет и список маршрутов
+        public Station(string name, string color, List<Station> transfers, params bool[] options)// создаём конструктор, принимающий имя станции, её цвет и список маршрутов
         {
             this.name = name; // присваиваем значению переменной name объекта значение переменной name метода
             this.color = color;// присваиваем значению переменной color объекта значение переменной color метода
             this.transfers = transfers; // Список пересадок
-    }
+            isWheelChairAccessible = options[0];
+            hasParkAndRide = options[1];
+            hasNearbyCableCar = options[2];
+        }
         public string GetName()// создаём метод, возвращающий имя станции
         {
             return name; // возвращаем переменную name объекта

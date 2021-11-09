@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\wasp_DZ\\Метрополитен 1\\MetroZH1\\MetroZH1\\MetroZH1.csproj",
+      "projectUniqueName": "D:\\GitHub\\wasp_DZ\\Метрополитен\\MetroZH1\\MetroZH1\\MetroZH1.csproj",
       "projectName": "MetroZH1",
-      "projectPath": "D:\\GitHub\\wasp_DZ\\Метрополитен 1\\MetroZH1\\MetroZH1\\MetroZH1.csproj",
+      "projectPath": "D:\\GitHub\\wasp_DZ\\Метрополитен\\MetroZH1\\MetroZH1\\MetroZH1.csproj",
       "packagesPath": "C:\\Users\\glebs\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\wasp_DZ\\Метрополитен 1\\MetroZH1\\MetroZH1\\obj\\",
+      "outputPath": "D:\\GitHub\\wasp_DZ\\Метрополитен\\MetroZH1\\MetroZH1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\glebs\\AppData\\Roaming\\NuGet\\NuGet.Config",

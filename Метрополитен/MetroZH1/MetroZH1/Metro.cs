@@ -33,7 +33,7 @@ namespace MetroZH1
         }
         public List<Station> FindStation(string name)
         {
-            List<Station> stations = new List<Station>;
+            List<Station> stations = new List<Station>();
             foreach(Line i in lines)
             {
                 stations.Add(i.FindStationByName(name));
@@ -61,7 +61,7 @@ namespace MetroZH1
                     stations.Add(j);
                 }
             }
-            return stations;s
+            return stations;
         }
         public void LoadStationsFromFile(string filename)
         {
