@@ -41,7 +41,7 @@ namespace MetroZH1
         {
             stations.Add(new Station(name, color));
         }
-        public void AddStaion(string name, List<Station> transfers, params bool[] options)
+        public void AddStation(string name, List<Station> transfers, params bool[] options)
         {
             stations.Add(new Station(name, color, transfers, options[0], options[1], options[2]) { SetLine = this }) ;
             

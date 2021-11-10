@@ -6,7 +6,7 @@ namespace MetroZH1
     {
         static void Main(string[] args)
         {
-            
+            Metro Moscow = new Metro();
         }
     }
 }
