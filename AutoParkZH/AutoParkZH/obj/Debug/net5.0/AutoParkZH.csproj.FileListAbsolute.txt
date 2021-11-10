@@ -1,0 +1,16 @@
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\bin\Debug\net5.0\AutoParkZH.exe
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\bin\Debug\net5.0\AutoParkZH.deps.json
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\bin\Debug\net5.0\AutoParkZH.runtimeconfig.json
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\bin\Debug\net5.0\AutoParkZH.runtimeconfig.dev.json
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\bin\Debug\net5.0\AutoParkZH.dll
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\bin\Debug\net5.0\ref\AutoParkZH.dll
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\bin\Debug\net5.0\AutoParkZH.pdb
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\obj\Debug\net5.0\AutoParkZH.csproj.AssemblyReference.cache
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\obj\Debug\net5.0\AutoParkZH.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\obj\Debug\net5.0\AutoParkZH.AssemblyInfoInputs.cache
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\obj\Debug\net5.0\AutoParkZH.AssemblyInfo.cs
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\obj\Debug\net5.0\AutoParkZH.csproj.CoreCompileInputs.cache
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\obj\Debug\net5.0\AutoParkZH.dll
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\obj\Debug\net5.0\ref\AutoParkZH.dll
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\obj\Debug\net5.0\AutoParkZH.pdb
+D:\GitHub\AutoPark\AutoParkZH\AutoParkZH\obj\Debug\net5.0\AutoParkZH.genruntimeconfig.cache
