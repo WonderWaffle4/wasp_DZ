@@ -10,23 +10,24 @@ namespace MetroZH1
     {
         // Поля класса Station
         private string name; // Название станции
-        private string color; // Цвет станции
-        public Line line; //  Название линии
-        private bool isWheelChairAccessible; // Есть ли инвалидные места?
-        private bool hasParkAndRide; // Есть ли парковка
-        private bool hasNearbyCableCar; // Есть ли рядом фуникулёр
-        private List<Station> transfers;
+        protected ConsoleColor color; // Цвет станции
+        protected Line line; //  Название линии
+        protected bool isWheelChairAccessible; // Есть ли инвалидные места?
+        protected bool hasParkAndRide; // Есть ли парковка
+        protected bool hasNearbyCableCar; // Есть ли рядом фуникулёр
+        protected List<Station> transfers;
 
 
-        public Station(string name, string color, params bool[] options)// создаём конструктор, принимающий имя станции и её цвет
+        public Station(string name, ConsoleColor color, params bool[] info)// создаём конструктор, принимающий имя станции и её цвет
         {
             this.name = name; // присваиваем значению переменной name объекта значение переменной name метода
             this.color = color;// присваиваем значению переменной color объекта значение переменной color метода
-            isWheelChairAccessible = options[0];
-            hasParkAndRide = options[1];
-            hasNearbyCableCar = options[2];
+            transfers = new List<Station>();
+            isWheelChairAccessible = info[0];
+            hasParkAndRide = info[1];
+            hasNearbyCableCar = info[2];
         }
-        public Station(string name, string color, List<Station> transfers, params bool[] options)// создаём конструктор, принимающий имя станции, её цвет и список маршрутов
+        public Station(string name, ConsoleColor color, List<Station> transfers, params bool[] info)// создаём конструктор, принимающий имя станции, её цвет и список маршрутов
         {
             this.name = name; // присваиваем значению переменной name объекта значение переменной name метода
             this.color = color;// присваиваем значению переменной color объекта значение переменной color метода
@@ -34,37 +35,42 @@ namespace MetroZH1
             {
                 this.transfers.Add(i);
             }
-            isWheelChairAccessible = options[0];
-            hasParkAndRide = options[1];
-            hasNearbyCableCar = options[2];
+            isWheelChairAccessible = info[0];
+            hasParkAndRide = info[1];
+            hasNearbyCableCar = info[2];
         }
-        public string GetName()// создаём метод, возвращающий имя станции
+        public Line SetLine
         {
-            return name; // возвращаем переменную name объекта
+            set { line = value; }
         }
-        public void SetName(string name)// создаём метод, задающий имя станции
+        public string Name// создаём свойство
         {
-            this.name = name; // присваиваем значению переменной name объекта значение переменной name метода
+            get { return name; }
+            set { name = value; }
+        } 
+        public bool IsWheelChairAccessible// создаём свойство, возвращающий true, если на станции есть инвалидные коляски
+        {
+            get { return isWheelChairAccessible; }
         }
-        public bool IsWheelChairAccessible()// создаём метод, возвращающий true, если на станции есть инвалидные коляски
+        public bool HasParkAndRide// создаём свойство, возвращающий true, если у станции есть парковка
         {
-            return isWheelChairAccessible;
+            get { return hasParkAndRide; }
         }
-        public bool HasParkAndRide()// создаём метод, возвращающий true, если у станции есть парковка
+        public bool HasNearbyCableCar// создаём свойство, возвращающий true, если у станции есть фуникулёр(??)
         {
-            return hasParkAndRide;
+            get { return hasNearbyCableCar; }
         }
-        public bool HasNearbyCableCar()// создаём метод, возвращающий true, если у станции есть фуникулёр(??)
+        public string GetLineName// создаём свойство, имя линии, на которой находится станция
         {
-            return hasNearbyCableCar;
+            get { return line.Name; }
         }
-        public string GetLineName()// создаём метод, имя линии, на которой находится станция
+        public List<Station> GetTransferList// создаём свойство, возвращающий список маршрутов
         {
-            return line.GetName();
+            get { return transfers; }
         }
-        public List<Station> GetTransferList()// создаём метод, возвращающий список маршрутов
+        public override string ToString()
         {
-            return transfers;
+            return base.ToString();
         }
     }
 }

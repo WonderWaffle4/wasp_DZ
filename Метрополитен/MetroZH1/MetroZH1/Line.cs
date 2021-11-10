@@ -9,11 +9,11 @@ namespace MetroZH1
     public class Line
     {
         //Поля
-        private List<Station> stations;//список станций линии
-        private string name;//имя линии
-        private string color;//цвет линии
+        protected List<Station> stations;//список станций линии
+        protected string name;//имя линии
+        protected ConsoleColor color;//цвет линии
         //Методы
-        public Line(string name, string color)//конструктор, принимающий имя линии и цвет
+        public Line(string name, ConsoleColor color)//конструктор, принимающий имя линии и цвет
         {
             this.name = name;// присваиваем значению переменной name объекта значение переменной name метода
             this.color = color;// присваиваем значению переменной color объекта значение переменной color метода
@@ -21,27 +21,21 @@ namespace MetroZH1
         }
         public Station GetStation(string name)//ну дальше там все понятно
         {
-            foreach (Station i in stations)
-            {
-                if (i.GetName() == name) return i;
-            }
-            return null;
+                foreach (Station i in stations)
+                {
+                    if (i.Name == name) return i;
+                }
+                return null;
         }
-        public string GetName()
+        public string Name
         {
-            return name;//возвращаем имя линии
+            get { return name; }
+            set { name = value; }
         }
-        public void SetName(string name)
+        public ConsoleColor GetColor
         {
-            this.name = name; //присваем имя линии
-        }
-        public string GetColor()
-        {
-            return color;//возвращаем цвет линии
-        }
-        public void SetColor(string color)
-        {
-            this.color = color;//присваем цвет линии
+            get { return color; }
+            set { color = value; }
         }
         public void AddStation(string name)//добавление станции в линию
         {
@@ -49,23 +43,64 @@ namespace MetroZH1
         }
         public void AddStaion(string name, List<Station> transfers, params bool[] options)
         {
-            stations.Add(new Station(name, color, transfers, options[0], options[1], options[2]) { line = this }) ;
+            stations.Add(new Station(name, color, transfers, options[0], options[1], options[2]) { SetLine = this }) ;
+            
         }
         public void RemoveStation(string name)
         {
             foreach (Station i in stations)
             {
-                if (i.GetName() == name) stations.Remove(i);
+                if (i.Name == name) stations.Remove(i);
                 break;
             }
         }
         public Station FindStationByName(string name)
         {
-            return GetStation(name);//то же самое, что getStation
+            return GetStation(name);
         }
-        public List<Station> GetStationList()
+        public List<Station> GetStationList
         {
-            return stations;
+            get { return stations; }
+        }
+        public virtual void PrintLine()
+        {
+
+        }
+    }
+    public class UndergroundLine : Line
+    {
+        public UndergroundLine(string name, ConsoleColor color) : base(name, color)
+        {
+            this.name = name;
+            this.color = color;
+        }
+        public override void PrintLine()
+        {
+
+        }
+    }
+    public class DiameterLine : Line
+    {
+        public DiameterLine(string name, ConsoleColor color) : base(name, color)
+        {
+            this.name = name;
+            this.color = color;
+        }
+        public override void PrintLine()
+        {
+
+        }
+    }
+    public class MCCLine : Line
+    {
+        public MCCLine(string name, ConsoleColor color) : base(name, color)
+        {
+            this.name = name;
+            this.color = color;
+        }
+        public override void PrintLine()
+        {
+
         }
     }
 }

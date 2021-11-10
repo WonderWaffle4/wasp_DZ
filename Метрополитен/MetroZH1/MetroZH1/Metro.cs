@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace MetroZH1
 {
@@ -10,16 +11,18 @@ namespace MetroZH1
     {
         private List<Line> lines;
         private string city;
-
+        private StreamReader reader;
+        private ConsoleColor[] LineColors = new ConsoleColor[18];
         public Metro(string city)
         {
             this.city = city;
+            lines = new List<Line>();
         }
-        public string GetCity()
+        public string City
         {
-            return city;
+            get { return city; }
         }
-        public void AddLine(string name, string color)
+        public void AddLine(string name, ConsoleColor color)
         {
             lines.Add(new Line(name, color));
         }
@@ -27,7 +30,7 @@ namespace MetroZH1
         {
             foreach(Line i in lines)
             {
-                if(i.GetName() == name) lines.Remove(i);
+                if(i.Name == name) lines.Remove(i);
                 break;
             }
         }
@@ -44,7 +47,7 @@ namespace MetroZH1
         {
             foreach(Line i in lines)
             {
-                if(i.GetName() == lineName)
+                if(i.Name == lineName)
                 {
                     return i.FindStationByName(name);
                 }
@@ -56,7 +59,7 @@ namespace MetroZH1
             List<Station> stations = new List<Station>();
             foreach(Line i in lines)
             {
-                foreach(Station j in i.GetStationList())
+                foreach(Station j in i.GetStationList)
                 {
                     stations.Add(j);
                 }
@@ -65,7 +68,25 @@ namespace MetroZH1
         }
         public void LoadStationsFromFile(string filename)
         {
+            Console.WriteLine("Введите путь к файлу: ");
+            reader = new StreamReader(Console.ReadLine());
+            string line = reader.ReadLine();
+            string add = "";
+            int buffer;
+            //добавление ветки
+            for(int i = 0; i != line[i] && i < line.Length; i++)
+            {
+                add += line[i];
+                if (i + 1 == line.Length) buffer = i;
+            }
+            AddLine();
+            //добавление станции
 
+            //добавление пересадок
+        }
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }
