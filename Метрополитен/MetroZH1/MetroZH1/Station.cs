@@ -31,10 +31,7 @@ namespace MetroZH1
         {
             this.name = name; // присваиваем значению переменной name объекта значение переменной name метода
             this.color = color;// присваиваем значению переменной color объекта значение переменной color метода
-            foreach(Station i in transfers)
-            {
-                this.transfers.Add(i);
-            }
+            this.transfers = new List<Station>(transfers);
             isWheelChairAccessible = info[0];
             hasParkAndRide = info[1];
             hasNearbyCableCar = info[2];
