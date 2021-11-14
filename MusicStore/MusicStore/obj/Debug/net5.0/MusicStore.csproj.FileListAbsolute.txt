@@ -1,0 +1,16 @@
+D:\C#\MusicStore\MusicStore\bin\Debug\net5.0\MusicStore.exe
+D:\C#\MusicStore\MusicStore\bin\Debug\net5.0\MusicStore.deps.json
+D:\C#\MusicStore\MusicStore\bin\Debug\net5.0\MusicStore.runtimeconfig.json
+D:\C#\MusicStore\MusicStore\bin\Debug\net5.0\MusicStore.runtimeconfig.dev.json
+D:\C#\MusicStore\MusicStore\bin\Debug\net5.0\MusicStore.dll
+D:\C#\MusicStore\MusicStore\bin\Debug\net5.0\ref\MusicStore.dll
+D:\C#\MusicStore\MusicStore\bin\Debug\net5.0\MusicStore.pdb
+D:\C#\MusicStore\MusicStore\obj\Debug\net5.0\MusicStore.csproj.AssemblyReference.cache
+D:\C#\MusicStore\MusicStore\obj\Debug\net5.0\MusicStore.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\MusicStore\MusicStore\obj\Debug\net5.0\MusicStore.AssemblyInfoInputs.cache
+D:\C#\MusicStore\MusicStore\obj\Debug\net5.0\MusicStore.AssemblyInfo.cs
+D:\C#\MusicStore\MusicStore\obj\Debug\net5.0\MusicStore.csproj.CoreCompileInputs.cache
+D:\C#\MusicStore\MusicStore\obj\Debug\net5.0\MusicStore.dll
+D:\C#\MusicStore\MusicStore\obj\Debug\net5.0\ref\MusicStore.dll
+D:\C#\MusicStore\MusicStore\obj\Debug\net5.0\MusicStore.pdb
+D:\C#\MusicStore\MusicStore\obj\Debug\net5.0\MusicStore.genruntimeconfig.cache
