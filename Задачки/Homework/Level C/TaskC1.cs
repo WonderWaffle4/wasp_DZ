@@ -32,23 +32,25 @@ namespace Homework
             List<int> tables = new List<int> { 0, 0, 0, 0, 0, 0 };
             double max = 0;
             int buffer = 0;
-            while(N != 0)
+            double copy;
+            while (N != 0)
             {
-                for (int i = 0; i < 6; i++)
+                for (int i = 5; i >= 0; i--)
                 {
+                    copy = i;
                     if (tables[i] == 0)
                     {
-                        if (max < (i + 1))
+                        if (max <= (copy + 1))
                         {
-                            max = i + 1;
+                            max = copy + 1;
                             buffer = i;
                         }
                     }
                     if (tables[i] > 0)
                     {
-                        if (max < ((i + 1) / tables[i]))
+                        if (max <= (copy + 1) / (tables[i] + 1))
                         {
-                            max = (i + 1) / tables[i];
+                            max = (copy + 1) / (tables[i] + 1);
                             buffer = i;
                         }
                     }
@@ -57,6 +59,8 @@ namespace Homework
                 N--;
                 max = 0;
                 buffer = 0;
+                foreach (int i in tables) Console.Write($"{i} ");
+                Console.WriteLine();
             }
             return tables;
         }

@@ -129,13 +129,27 @@ namespace MetroZH1
             int buffer = 0;
             string mainLine;//навзвание главной проверяемой ветки
             bool foundLine = false;//нашлась ли ветка в списке
-            for (int i = 0; i != ';'; i++)
+            while(line != "")
             {
-                add += line[i];
-                if (line[i + 1] == ';') buffer = i;
+                for(int i = 0; i != ';'; i++)
+                {
+                    add += line[i];
+                    buffer = i;
+                }
+                buffer += 2;
+                add = "";
+                AddLine(add, ConsoleColor.Red);
+                for(int i = buffer; i != ';'; i++)
+                {
+                    add += line[i];
+                }
+                foreach(Line Line in lines)
+                {
+                    if (Line.Name == add) Line.AddStation(add);
+                }
             }
             
-            mainLine = add;//запомнили ветку
+           /* mainLine = add;//запомнили ветку
             add = "";
             buffer++;
             for (int i = buffer; i != ';'; i++) add += line[i];
@@ -156,9 +170,9 @@ namespace MetroZH1
             {
                 if (i.Name == mainLine) i.AddStation(add);
             }
-            line = reader.ReadLine();
+            line = reader.ReadLine();*/
         }
-        public override string ToString()
+        public override string ToString()//все станции и линии метро
         {
             return base.ToString();
         }
