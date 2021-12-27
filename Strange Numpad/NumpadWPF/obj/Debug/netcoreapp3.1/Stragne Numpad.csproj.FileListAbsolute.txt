@@ -1,0 +1,20 @@
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad.csproj.AssemblyReference.cache
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\App.g.cs
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad_MarkupCompile.cache
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad_MarkupCompile.lref
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\bin\Debug\netcoreapp3.1\Stragne Numpad.exe
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\bin\Debug\netcoreapp3.1\Stragne Numpad.deps.json
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\bin\Debug\netcoreapp3.1\Stragne Numpad.runtimeconfig.json
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\bin\Debug\netcoreapp3.1\Stragne Numpad.runtimeconfig.dev.json
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\bin\Debug\netcoreapp3.1\Stragne Numpad.dll
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\bin\Debug\netcoreapp3.1\Stragne Numpad.pdb
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad.g.resources
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad.AssemblyInfoInputs.cache
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad.AssemblyInfo.cs
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad.csproj.CoreCompileInputs.cache
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad.dll
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad.pdb
+D:\C# Blend WPF\Strange Numpad\NumpadWPF\obj\Debug\netcoreapp3.1\Stragne Numpad.genruntimeconfig.cache

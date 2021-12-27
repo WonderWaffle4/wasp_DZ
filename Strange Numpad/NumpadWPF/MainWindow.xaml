@@ -1,0 +1,30 @@
+﻿<Window x:Class="NumpadWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NumpadWPF"
+        mc:Ignorable="d"
+        Title="Numpad" Height="450" Width="300" Background="#FF5B5889" ResizeMode="NoResize" VerticalAlignment="Center" HorizontalAlignment="Center">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="172*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="passwordBox" Height="89" Margin="35,10,35,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" TextAlignment="Center" FontFamily="Courier New" Grid.RowSpan="2" HorizontalContentAlignment="Center" TextChanged="passwordBox_TextChanged" VerticalContentAlignment="Center"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="58,-30,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="1" Margin="35,22,0,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" HorizontalAlignment="Left" FontSize="36" FontFamily="Arial Black" Background="#FFA8AAE0" PreviewMouseLeftButtonUp="button_PreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="button_PreviewMouseLeftButtonDown"/>
+        <Button x:Name="button3" Content="3" Margin="0,22,35,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" HorizontalAlignment="Right" FontFamily="Arial Black" FontSize="36" Background="#FFA8AAE0" PreviewMouseLeftButtonUp="button_PreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="button_PreviewMouseLeftButtonDown"/>
+        <Button x:Name="button2" Content="2" Margin="0,22,0,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" RenderTransformOrigin="0.51,0.62" Padding="0,1,0,0" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="36" Background="#FFA8AAE0" PreviewMouseLeftButtonUp="button_PreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="button_PreviewMouseLeftButtonDown"/>
+        <Button x:Name="button4" Content="4" Margin="35,98,0,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" HorizontalAlignment="Left" FontSize="36" FontFamily="Arial Black" Background="#FFA8AAE0" PreviewMouseLeftButtonUp="button_PreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="button_PreviewMouseLeftButtonDown"/>
+        <Button x:Name="button6" Content="6" Margin="0,98,35,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" HorizontalAlignment="Right" FontFamily="Arial Black" FontSize="36" Background="#FFA8AAE0" PreviewMouseLeftButtonUp="button_PreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="button_PreviewMouseLeftButtonDown"/>
+        <Button x:Name="button5" Content="5" Margin="0,98,0,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" RenderTransformOrigin="0.51,0.62" Padding="0,1,0,0" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="36" Background="#FFA8AAE0" PreviewMouseLeftButtonUp="button_PreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="button_PreviewMouseLeftButtonDown"/>
+        <Button x:Name="button7" Content="7" Margin="36,176,0,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" HorizontalAlignment="Left" FontSize="36" FontFamily="Arial Black" Background="#FFA8AAE0" PreviewMouseLeftButtonUp="button_PreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="button_PreviewMouseLeftButtonDown"/>
+        <Button x:Name="button9" Content="9" Margin="0,176,34,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" HorizontalAlignment="Right" FontFamily="Arial Black" FontSize="36" Background="#FFA8AAE0" PreviewMouseLeftButtonUp="button_PreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="button_PreviewMouseLeftButtonDown"/>
+        <Button x:Name="button8" Content="8" Margin="0,176,0,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" RenderTransformOrigin="0.51,0.62" Padding="0,1,0,0" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="36" Background="#FFA8AAE0" PreviewMouseLeftButtonUp="button_PreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="button_PreviewMouseLeftButtonDown"/>
+        <Button x:Name="buttonX" Content="X" Margin="36,255,0,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" HorizontalAlignment="Left" FontSize="36" FontFamily="Arial Black" Background="#FFEA8080" Click="Button_Click_X"/>
+        <Button x:Name="buttonOk" Content="OK" Margin="0,255,34,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" HorizontalAlignment="Right" FontFamily="Arial Black" FontSize="36" Background="#FF9AEE9A" Click="Button_Click_Ok"/>
+        <Button x:Name="button0" Content="0" Margin="0,255,0,0" VerticalAlignment="Top" Height="70" Width="70" Grid.Row="1" RenderTransformOrigin="0.51,0.62" Padding="0,1,0,0" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="36" Background="#FFA8AAE0" PreviewMouseLeftButtonUp="button_PreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="button_PreviewMouseLeftButtonDown"/>
+
+    </Grid>
+</Window>
