@@ -1,0 +1,10 @@
+CREATE TABLE users (surname TEXT, name TEXT, patronymic TEXT, birth DATETIME, id INTEGER PRIMARY KEY);
+INSERT INTO users (surname, name, patronymic, birth) VALUES ('Сергеев', 'Сергей', 'Сергеевич', '27-05-2001');
+INSERT INTO users (name) VALUEs ('Олег');
+SELECT * FROM users WHERE name = 'Павел';
+SELECT * FROM users WHERE id > 5 AND id <= 10;
+SELECT * FROM users WHERE surname = 'Павлов' AND name = 'Павел' AND id > 5 AND id <= 10;
+SELECT DISTINCT * FROM users where surname = 'Жданов';
+SELECT name, surname FROM users;
+DELETE FROM users;
+DROP TABLE users;
